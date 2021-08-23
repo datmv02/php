@@ -103,7 +103,7 @@ if (isset($_POST['submit'])) {
         $is_flag = false;
     } else {
         $is_image = true;
-        $allowType = array('jpg', 'png', 'image');
+        $allowType = ['jpg', 'png'];
         $imageType = pathinfo($_FILES['image']['name'], PATHINFO_EXTENSION);
 
         if ($_FILES['image']['size'] > 3145728) {
